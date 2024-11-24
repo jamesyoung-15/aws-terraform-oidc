@@ -1,2 +1,3 @@
-# aws-terraform-oidc
-AWS OIDC setup for Github action runners to access AWS services
+# AWS OIDC setup for Github Actions
+
+Using Terraform to setup my AWS OIDC setup for Github actions runners to access AWS services.
