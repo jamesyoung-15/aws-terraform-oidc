@@ -11,6 +11,10 @@ resource "aws_iam_openid_connect_provider" "oidc" {
   ]
 
   thumbprint_list = ["ffffffffffffffffffffffffffffffffffffffff"]
+  
+  tags = {
+    "terraform_managed" = "true"
+  }
 }
 
 # Policy Document for OIDC
