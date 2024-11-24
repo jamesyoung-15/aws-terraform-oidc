@@ -45,6 +45,9 @@ data "aws_iam_policy_document" "oidc_policy" {
 resource "aws_iam_role" "oidc_role" {
   name               = "github_oidc_role"
   assume_role_policy = data.aws_iam_policy_document.oidc_policy.json
+  tags = {
+    "terraform_managed" = "true"
+  }
 }
 
 # Policy for OIDC Role to access AWS resources
